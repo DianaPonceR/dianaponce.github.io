@@ -1,0 +1,480 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-lg {
+    position: relative;
+    width: 100%;
+}
+
+/* header */
+
+.header {
+    background-image: url('../img/email-pattern.png');
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    /* position: relative; */
+    height: 100vh;
+}
+
+.profile-container {
+    width: 100%;
+    height: auto;
+}
+
+.profile-image {
+    background-image: url('../img/me.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 139px;
+    height: 140px;
+    margin: 5% auto 2%;
+    border-radius: 50%;
+}
+
+.profile-title {
+    font-size: 4.5vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+.profile-subtitle {
+    font-size: 1.3vw;
+    font-weight: 300;
+    text-align: center;
+    color: #3d85c6;
+}
+
+.profile-description {
+    font-size: 1.3vw;
+    line-height: 1.7;
+    text-align: center;
+    padding: 5% 13%;
+}
+
+.title-container {
+    font-size: 3vw;
+    padding: 3% 5%;
+    text-align: center;
+}
+
+/* Portfolio */
+
+.portfolio-container {
+    background-image: url('../img/pipes.png');
+    background-attachment: fixed;
+    height: 255vh;
+    padding: 0 5%;
+}
+
+.portfolio-data-mobile {
+    display: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .portfolio-container::-webkit-scrollbar {
+    display: none;
+} */
+
+/* Hide scrollbar for IE and Edge */
+/* .portfolio-container {
+    -ms-overflow-style: none;
+} */
+
+.portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffffbf;
+    border: 1px solid #3d85c6;
+    margin-bottom: 6%;
+    box-shadow: 0 25px 25px -10px rgba(0,0,0,0.5);
+}
+
+.portfolio-data {
+    background: #3d85c6;
+    width: 33.33%;
+    padding: 20px;
+    /* width: 226px; */
+    height: auto;
+    color: #fff;
+}
+
+.portfolio-name {
+    font-size: 1.6vw;
+}
+
+.portfolio-date {
+    font-size: 1.1vw;
+    margin: 7% 0 0 0%;
+}
+
+.portfolio-description {
+    width: 59.3%;
+    padding: 1% 2%;
+    font-size: 1.3vw;
+    line-height: 1.6;
+}
+
+.portfolio-card.juntas, .portfolio-card.fesa, .portfolio-card.imcine {
+    border-radius: 20px 40px 40px 20px
+}
+
+.portfolio-card.ccd, .portfolio-card.utel {
+    border-radius: 40px 20px 20px 40px;
+}
+
+.portfolio-data.juntas, .portfolio-data.fesa, .portfolio-data.imcine {
+    border-radius: 17px 17px 54px 17px;
+}
+
+.portfolio-data.ccd, .portfolio-data.utel {
+    border-radius: 17px 17px 17px 54px;
+}
+
+.portfolio-name.ccd {
+    margin: 26% 0 0 0%;
+}
+
+/* habilidades técnicas */
+
+.habilidades-tecnicas {
+    background-image: url('../img/topography.png');
+    background-attachment: fixed;
+    height: 200vh;
+}
+
+.skill-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card {
+    background: #3d85c6;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 2% 3% 3% 2%;
+    z-index: 100;
+    position: relative;
+}
+
+.skill-title {
+    text-align: center;
+    margin: 5% 0 0 22%;
+    padding: 6%;
+    z-index: 1;
+    position: absolute;
+    border-radius: 11px;
+    width: 130px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 1.7vw;
+}
+
+.skill-subtitle ul {
+    margin: 120px 0 10px 35px;
+    list-style: none;
+    color: #fff;
+}
+
+.skill-subtitle ul li {
+    margin-bottom: 10px;
+}
+
+/* contacto */
+
+.contacto {
+    background-image: url('../img/email-pattern.png');
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.contacto-info {
+    padding: 0% 18%;
+    text-align: center;
+    font-size: 2.1vw;
+}
+
+.contacto-email {
+    font-size: 2vw;
+    padding: 4% 30%;
+    text-align: center;
+}
+
+.contacto-email a {
+    color: #3d85c6;
+}
+
+.contacto-email a:hover {
+    color: #000;
+    background: #fff;
+    padding: 2%;
+}
+
+/* media queries */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .profile-image {
+        margin: 8% auto 2%;
+    }
+
+    .profile-title {
+        font-size: 9.5vw;
+    }
+
+    .profile-subtitle {
+        font-size: 3.8vw;
+    }
+
+    .profile-description {
+        font-size: 5.3vw;
+        padding: 5% 13%;
+        margin-top: 7%;
+    }
+
+    /* experiencia profesional */
+
+    .portfolio-container {
+        height: 382vh;
+    }
+
+    .portfolio-card.juntas, .portfolio-card.fesa, .portfolio-card.imcine {
+        border-radius: 0;
+    }
+
+    .portfolio-data.juntas, .portfolio-data.fesa, .portfolio-data.imcine {
+        border-radius: 0;
+    }
+
+    .portfolio-card.ccd, .portfolio-card.utel {
+        border-radius: 0;
+    }
+
+    .title-container {
+        font-size: 9vw;
+        margin: 11% 0 11% 0;
+    }
+
+    .portfolio-data {
+        width: 100%;
+    }
+
+    .portfolio-name {
+        font-size: 4.6vw;
+    }
+
+    .portfolio-date {
+        font-size: 3vw;
+        margin: 2% 0 0 0%;
+    }
+
+    .portfolio-description {
+        width: 100%;
+        padding: 5% 5%;
+        font-size: 3.8vw;
+    }
+
+    .portfolio-data.ccd, .portfolio-data.utel {
+        display: none;
+    }
+
+    .portfolio-data-mobile {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        background :#3d85c6;
+        width: 100%;
+    }
+
+    .portfolio-name.ccd {
+        margin: 1% 0 0 0%;
+    }
+    
+    
+    /* habilidades técnicas */
+    .habilidades-tecnicas {
+        height: 415vh;
+    }
+
+    .skill-title {
+        margin: 5% 0 0 23%;
+        padding: 6% 13% 3% 3%;
+        font-size: 6.7vw;
+    }
+
+    .skill-subtitle {
+        font-size: 4.5vw;
+    }
+
+    .skill-subtitle.git {
+        padding-top: 15%;
+    }
+
+    /* contacto */
+    .contacto-info {
+        font-size: 5.3vw;
+    }
+
+    .contacto-email {
+        font-size: 5.3vw;
+        padding: 5% 0%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .profile-image {
+        margin: 15% auto 4%;
+    }
+
+    .profile-title {
+        font-size: 7.5vw;
+    }
+
+    .profile-subtitle {
+        font-size: 2.8vw;
+    }
+
+    .profile-description {
+        font-size: 3vw;
+        margin-top: 8%;
+    }
+
+    /* Portfolio */
+
+    .portfolio-container {
+        height: 190vh;
+    }
+
+    .title-container {
+        font-size: 5vw;
+    }
+
+    .portfolio-description {
+        width: 56.3%;
+        font-size: 2.1vw;
+    }
+
+    .portfolio-name {
+        font-size: 2.3vw;
+    }
+
+    .portfolio-date {
+        font-size: 1.6vw;
+    }
+
+    /* Habilidades técnicas */
+
+    .habilidades-tecnicas {
+        height: 146vh;
+    }
+
+    .skill-title {
+        font-size: 2.9vw;
+    }
+
+    /* contacto */
+    .contacto {
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    /* header */
+    .profile-image {
+        margin: 20% auto 4%;
+    }
+
+    .profile-title {
+        font-size: 5.5vw;
+    }
+
+    .profile-subtitle {
+        font-size: 2vw;
+    }
+
+    .profile-description {
+        font-size: 2.9vw;
+        margin-top: 9%;
+    }
+
+    /* portfolio */
+
+    .portfolio-container {
+        height: 112vh;
+    }
+
+    .title-container {
+        font-size: 5vw;
+    }
+
+    .portfolio-description {
+        width: 58.3%;
+        font-size: 1.5vw;
+    }
+
+    /* Habilidades técnicas */
+    .skill-title {
+        font-size: 2.3vw;
+    }
+
+    .habilidades-tecnicas {
+        height: 116vh;
+    }
+
+    /* contacto */
+    .contacto {
+        height: 80vh;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1280px) and (max-width: 1300px) {
+
+    .profile-image {
+        margin: 8% auto 3%;
+    }
+
+    .profile-subtitle {
+        font-size: 1.8vw;
+    }
+
+    .profile-description {
+        font-size: 2.3vw;
+    }
+
+    .portfolio-container {
+        height: 170vh;
+    }
+
+    .portfolio-description {
+        width: 58.3%;
+    }
+
+    .portfolio-data.ccd, .portfolio-data.utel {
+        padding: 24.8px;
+    }
+
+    .habilidades-tecnicas {
+        background-image: url(../img/topography.png);
+        background-attachment: fixed;
+        height: 137vh;
+    }
+
+    .contacto {
+        height: 80vh;
+    }
+}
+
